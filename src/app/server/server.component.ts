@@ -6,5 +6,12 @@ import {Component} from "@angular/core";
   }
 )
 export class ServerComponent {
+  id: number = 123
+  private serverStatus = 'offline'
+
+  getServerStatus() {
+    return `${this.serverStatus.toUpperCase()}`
+  }
+
 
 }
